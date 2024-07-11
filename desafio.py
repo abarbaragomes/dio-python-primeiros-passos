@@ -40,6 +40,8 @@ while True:
                 print("Saldo insuficiente em conta.")
             elif saque > limite:
                 print("Saque não autorizado. O limite máximo por saque é de R$ 500")
+            elif saque <= 0:
+                print("Valor inválido. Refaça a operação!")
             else:
                 saldo -= saque
                 numero_saques += 1
